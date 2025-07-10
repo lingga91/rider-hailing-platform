@@ -1,18 +1,19 @@
 # Ride Hailing Platform
 
 A microservice to track live location of drivers. 
+
+# API Endpoints
+
 Consists of three different endpoints.
 
-# Endpoints
-
-1. POST：/location 
+# POST：/location 
   - submit driver location update
   - accept `driver_id`, `latitude`, `longitude`, `timestamp` payload
 
-2. GET: /location/:driver_id
+# GET: /location/:driver_id
   - Get the latest location of a specific driver
 
-3. GET: /location/history/:driver_id
+# GET: /location/history/:driver_id
   - Get location history of a specific driver
   
 
