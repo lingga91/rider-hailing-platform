@@ -17,4 +17,4 @@ export class Driver extends Document {
 }
 
 export const DriverSchema = SchemaFactory.createForClass(Driver);
-DriverSchema.index({ driver_id: 1, timestamp: -1 });
+
