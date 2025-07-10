@@ -6,14 +6,14 @@ Consists of three different endpoints.
 # Endpoints
 
 1. POST：/location 
-  -submit driver location update
-  -accept `driver_id`, `latitude`, `longitude`, `timestamp` payload
+  - submit driver location update
+  - accept `driver_id`, `latitude`, `longitude`, `timestamp` payload
 
 2. GET: /location/:driver_id
-  -Get the latest location of a specific driver
+  - Get the latest location of a specific driver
 
 3. GET: /location/history/:driver_id
-  -Get location history of a specific driver
+  - Get location history of a specific driver
   
 
 ## System Requirements
