@@ -17,4 +17,4 @@ export class History extends Document {
 }
 
 export const HistorySchema = SchemaFactory.createForClass(History);
-
+HistorySchema.index({ driver_id: 1, timestamp: -1 });
