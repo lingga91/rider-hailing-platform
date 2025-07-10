@@ -4,8 +4,6 @@ const axios = require('axios');
 const filePath = './driver_location_log.json';
 const endpoint = 'http://localhost:3000/location';
 
-//ab -p data.json -T application/json -c 100 -n 20000 http://localhost:3000/location
-
 async function run() {
   const raw = fs.readFileSync(filePath);
   const locations = JSON.parse(raw);
@@ -28,7 +26,7 @@ async function run() {
       driver_id: loc.driver_id,
       latitude: loc.latitude,
       longitude: loc.longitude,
-      timestamp: new Date().toISOString() // Client-side timestamp (optional)
+      timestamp: new Date().toISOString() // Client-side timestamp
     };
 
     try {
