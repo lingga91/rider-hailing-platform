@@ -4,16 +4,16 @@ A microservice to track live location of drivers.
 
 # API Endpoints
 
-Consists of three different endpoints.
+Consists of three different endpoints
 
-# POST：/location 
+1. POST：/location 
   - submit driver location update
   - accept `driver_id`, `latitude`, `longitude`, `timestamp` payload
 
-# GET: /location/:driver_id
+2. GET: /location/:driver_id
   - Get the latest location of a specific driver
 
-# GET: /location/history/:driver_id
+3. GET: /location/history/:driver_id
   - Get location history of a specific driver
   
 
